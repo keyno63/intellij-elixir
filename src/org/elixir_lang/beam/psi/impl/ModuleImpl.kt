@@ -67,7 +67,6 @@ class ModuleImpl<T : StubElement<*>?>(private val stub: T) : ModuleElementImpl()
                     LOGGER.error("No decompiled source function with name/arity (${moduleName(element)}.${name}/${arity})")
                 }
             } else {
-                val moduleName =
                 LOGGER.error("No decompiled source function with name (${moduleName(element)}.$name)")
             }
         }
