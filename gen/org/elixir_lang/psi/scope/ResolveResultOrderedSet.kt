@@ -58,7 +58,7 @@ class ResolveResultOrderedSet {
 
    fun addAll(other: ResolveResultOrderedSet) {
       other.nameOrder.forEach { name ->
-         decompiledPsiElementResolveResultListByName[name]!!.psiElementResolveResultList.forEach { psiElementResolveResult ->
+         other.decompiledPsiElementResolveResultListByName[name]!!.psiElementResolveResultList.forEach { psiElementResolveResult ->
             add(psiElementResolveResult.element, name, psiElementResolveResult.isValidResult)
          }
       }
