@@ -1162,6 +1162,10 @@ public class ElixirVisitor extends PsiElementVisitor {
     visitOperator(o);
   }
 
+  public void visitNavigatablePsiElement(@NotNull NavigatablePsiElement o) {
+    visitElement(o);
+  }
+
   public void visitArguments(@NotNull Arguments o) {
     visitElement(o);
   }
@@ -1206,15 +1210,7 @@ public class ElixirVisitor extends PsiElementVisitor {
     visitElement(o);
   }
 
-  public void visitNamed(@NotNull Named o) {
-    visitElement(o);
-  }
-
   public void visitNamedElement(@NotNull NamedElement o) {
-    visitElement(o);
-  }
-
-  public void visitNavigatablePsiElement(@NotNull NavigatablePsiElement o) {
     visitElement(o);
   }
 
@@ -1259,6 +1255,10 @@ public class ElixirVisitor extends PsiElementVisitor {
   }
 
   public void visitWordsFragmented(@NotNull WordsFragmented o) {
+    visitElement(o);
+  }
+
+  public void visitNamed(@NotNull Named o) {
     visitElement(o);
   }
 
