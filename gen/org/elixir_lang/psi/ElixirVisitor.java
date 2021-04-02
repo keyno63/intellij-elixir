@@ -957,8 +957,7 @@ public class ElixirVisitor extends PsiElementVisitor {
   }
 
   public void visitUnmatchedAtNonNumericOperation(@NotNull ElixirUnmatchedAtNonNumericOperation o) {
-    visitUnmatchedExpression(o);
-    // visitAtNonNumericOperation(o);
+     visitAtNonNumericOperation(o);
   }
 
   public void visitUnmatchedAtNumericBracketOperation(@NotNull ElixirUnmatchedAtNumericBracketOperation o) {
@@ -967,8 +966,7 @@ public class ElixirVisitor extends PsiElementVisitor {
   }
 
   public void visitUnmatchedAtOperation(@NotNull ElixirUnmatchedAtOperation o) {
-    visitUnmatchedExpression(o);
-    // visitAtNonNumericOperation(o);
+     visitAtNonNumericOperation(o);
   }
 
   public void visitUnmatchedAtUnqualifiedBracketOperation(@NotNull ElixirUnmatchedAtUnqualifiedBracketOperation o) {
